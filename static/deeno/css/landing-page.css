@@ -1,0 +1,12 @@
+#logo {
+  height: 188px;
+  width: 188px;
+}
+#slogan {
+  margin-top: 8px;
+  font-size: 32px;
+  font-style: italic;
+}
+#logo, #slogan {
+  display: none;
+}

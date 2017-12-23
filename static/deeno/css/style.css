@@ -11,22 +11,9 @@ body {
   font-family: "Helvetica Neue", Helvetica;
 }
 
-/* Arrows */
-#prev-arrow, #next-arrow {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  height: 48px;
-  font-size: 48px;
-  cursor: pointer;
-}
-#prev-arrow { left: 5%; }
-#next-arrow { right: 5%; }
-
-/* Landing page */
-#landing-page-container {
+/* Pages */
+.page {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -37,15 +24,33 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-#title {
-  font-size: 72px;
+
+/* Arrows */
+#prev-arrow, #next-arrow {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 64px;
+  font-size: 64px;
+  cursor: pointer;
 }
-#slogan {
-  margin-top: 8px;
-  font-size: 32px;
-  font-style: italic;
+#prev-arrow { left: 5%; }
+#next-arrow { right: 5%; }
+
+/* Pulse animation */
+.pulse {
+  /* WEBKIT STUFF */
+  animation: pulse 1.6s infinite;
 }
-#logo {
-  height: 188px;
-  width: 188px;
+.pulse:hover {
+  animation: 0;
+}
+@keyframes pulse {
+  0% { color: black; }
+  20% { color: black; }
+  60% { color: white; }
+  100% { color: black; }
 }

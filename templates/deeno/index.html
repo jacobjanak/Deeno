@@ -19,24 +19,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
   {% load static %}
-  <link rel="stylesheet" href="{% static 'deeno/css/style.css' %}"
+  <link rel="stylesheet" href="{% static 'deeno/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'deeno/css/landing-page.css' %}" />
 </head>
 <body>
 
   <!-- Arrows -->
   <div id="prev-arrow">
-    <i class="fa fa-arrow-circle-o-left"></i>
+    <i class="fa fa-angle-left"></i>
   </div>
   <div id="next-arrow">
-    <i class="fa fa-arrow-circle-o-right"></i>
+    <i class="fa fa-angle-right"></i>
   </div>
 
   <!-- Landing page -->
-  <div id="landing-page-container">
-    <div id="title">deeno</div>
+  <div class="page" id="landing-page-container">
     <img id="logo" src="{% static 'deeno/images/logo.png' %}" alt="Logo"/>
     <div id="slogan">Give the Gift of Time</div>
   </div>
+
+  <div class="page" id="name-page-container">
+    <div id="text">
+
+    </div>
+    <input />
+  </div>
+
+  <script src="{% static 'deeno/js/script.js' %}"></script>
+  <script src="{% static 'deeno/js/landing-page.js' %}"></script>
 
 </body>
 </html>
