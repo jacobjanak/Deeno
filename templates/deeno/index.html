@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deeno - Give the Gift of Time</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <!-- Keywords are only used by chinese search engines -->
+  <meta name="keywords" content="" />
+  <!-- Add Facebook, Twitter, and Google+ specific meta data -->
+  <!-- Don't forget Aria stuff -->
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'deeno/css/style.css' %}"
+</head>
+<body>
+
+  <!-- Arrows -->
+  <div id="prev-arrow">
+    <i class="fa fa-arrow-circle-o-left"></i>
+  </div>
+  <div id="next-arrow">
+    <i class="fa fa-arrow-circle-o-right"></i>
+  </div>
+
+  <!-- Landing page -->
+  <div id="landing-page-container">
+    <div id="title">deeno</div>
+    <img id="logo" src="{% static 'deeno/images/logo.png' %}" alt="Logo"/>
+    <div id="slogan">Give the Gift of Time</div>
+  </div>
+
+</body>
+</html>
