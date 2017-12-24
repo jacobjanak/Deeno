@@ -15,14 +15,9 @@ body {
 .page {
   display: none;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
-  height: 320px;
   text-align: center;
-  vertical-align: middle;
+  font-size: 0px; /* removes whitespace */
 }
 
 /* Arrows */
@@ -34,11 +29,14 @@ body {
   bottom: 0;
   margin: auto 0;
   height: 64px;
-  font-size: 64px;
+  font-size: 0px; /* removes blank space */
   cursor: pointer;
 }
 #prev-arrow { left: 5%; }
 #next-arrow { right: 5%; }
+#prev-arrow > i, #next-arrow > i {
+  font-size:  65px;
+}
 
 /* Pulse animation */
 .pulse {

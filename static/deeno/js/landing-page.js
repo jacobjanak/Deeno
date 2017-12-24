@@ -10,14 +10,9 @@ $(function() {
     })
   })
 
-  /*
+  // Stop pulsing after first click
   $('#next-arrow').on('click', function() {
-    const windowWidth = $(window).width();
-    $('#landing-page-container').animate({
-      left: -windowWidth,
-      right: windowWidth,
-    }, windowWidth * 2, function() {
-      $('#landing-page-container').hide()
-    })
-  }) */
+    $('#next-arrow > i').removeClass('pulse')
+  })
+
 })

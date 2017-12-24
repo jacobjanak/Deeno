@@ -21,6 +21,7 @@
   {% load static %}
   <link rel="stylesheet" href="{% static 'deeno/css/style.css' %}" />
   <link rel="stylesheet" href="{% static 'deeno/css/landing-page.css' %}" />
+  <link rel="stylesheet" href="{% static 'deeno/css/name-page.css' %}" />
 </head>
 <body>
 
@@ -34,19 +35,20 @@
 
   <!-- Landing page -->
   <div class="page" id="landing-page-container">
-    <img id="logo" src="{% static 'deeno/images/logo.png' %}" alt="Logo"/>
-    <div id="slogan">Give the Gift of Time</div>
+    <img id="logo" src="{% static 'deeno/images/logo.png' %}" alt="Logo" />
+    <br />
+    <img id="slogan" src="{% static 'deeno/images/slogan.png' %}" alt="Slogan" />
   </div>
 
+  <!-- 'Enter your name' page -->
   <div class="page" id="name-page-container">
-    <div id="text">
-
-    </div>
-    <input />
+    <p>Who would you like to give the gift of time to?</p>
+    <input id="name-input" type="text" placeholder="Name" />
   </div>
 
   <script src="{% static 'deeno/js/script.js' %}"></script>
   <script src="{% static 'deeno/js/landing-page.js' %}"></script>
+  <script src="{% static 'deeno/js/name-page.js' %}"></script>
 
 </body>
 </html>

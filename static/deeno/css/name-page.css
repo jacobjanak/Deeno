@@ -1,0 +1,27 @@
+#name-page-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(50% + 17px);
+}
+#name-page-container > p {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 5%;
+  font-size: 32px;
+  text-align: center;
+}
+#name-input {
+  position: absolute;
+  bottom: 0;
+  margin-left: -81px;
+  height: 18px;
+  width: 160px;
+  padding: 7px 0 7px 4px;
+  font-size: 18px;
+  background-color: Gainsboro;
+  border: none;
+  outline: none;
+}

@@ -1,12 +1,15 @@
+#landing-page-container {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(50% + 60px);
+}
 #logo {
-  height: 188px;
-  width: 188px;
+  width: 120px;
 }
 #slogan {
-  margin-top: 8px;
-  font-size: 32px;
-  font-style: italic;
+  margin-top: 16px;
+  width: 360px;
+  max-width: 60%;
 }
-#logo, #slogan {
-  display: none;
-}
+#logo, #slogan { display: none; }
